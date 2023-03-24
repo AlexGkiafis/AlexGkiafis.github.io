@@ -3172,7 +3172,7 @@ Promise.all(promises).then((image)=>{
                 dialogCount = 20;
                 wave = 4;
                 spawnEnemies();
-                enemiesLeft = 15;
+                enemiesLeft = 12;
             }
             else if(dialogCount == 21){
                 dialogState = 'onprogress';
@@ -3197,7 +3197,7 @@ Promise.all(promises).then((image)=>{
                 dialogCount = 22;
                 wave = 5;
                 spawnEnemies();
-                enemiesLeft = 20;
+                enemiesLeft = 13;
             }
             else if(dialogCount == 23){
                 dialogState = 'onprogress';
@@ -3213,7 +3213,7 @@ Promise.all(promises).then((image)=>{
                 dialogCount = 25;
                 wave = 6;
                 spawnEnemies();
-                enemiesLeft = 20;
+                enemiesLeft = 14;
             }
             else if(dialogCount == 26){
                 dialogState = 'onprogress';
@@ -3229,21 +3229,21 @@ Promise.all(promises).then((image)=>{
                 dialogCount = 28;
                 wave = 7;
                 spawnEnemies();
-                enemiesLeft = 5;
+                enemiesLeft = 4;
             }
             else if(dialogCount == 29){
                 dialog = [];
                 dialogCount = 30;
                 wave = 8;
                 spawnEnemies();
-                enemiesLeft = 20;
+                enemiesLeft = 10;
             }
             else if(dialogCount == 31){
                 dialog = [];
                 dialogCount = 32;
                 wave = 9;
                 spawnEnemies();
-                enemiesLeft = 15;
+                enemiesLeft = 6;
             }
             else if(dialogCount == 33){
                 dialogState = 'onprogress';
@@ -3872,7 +3872,7 @@ Promise.all(promises).then((image)=>{
                     c.textAlign = 'left';
                     let lineHeight;
                     c.font = `normal ${(canvas.width * (3 / 100) < 20 && canvas.width * (3 / 100) > 15)? canvas.width * (3 / 100):(canvas.width * (3/ 100) <= 15)? 15: 20}px Luckiest Guy`;
-                    let ttxt = 'The game was made by me, Karak10, however, I do not own any of the music or sound effects, and most of the images also are not mine. I am not an artist, just a programmer, and this project took me weeks to make, so I hope you enjoy it. Lastly, I am not hiding that this game is indeed inspired by Pony Island, so there are a lot of similarities you may notice.';
+                    let ttxt = 'The game was made by me, Alex, however, I do not own any of the music or sound effects, and most of the images also are not mine. I am not an artist, just a programmer, and this project took me weeks to make, so I hope you enjoy it. Lastly, I am not hiding that this game is indeed inspired by Pony Island, so there are a lot of similarities you may notice.';
                     let lines = wrapText(ttxt, canvas.width * (10 / 100), canvas.height * (40 / 100), canvas.width * (80 / 100), 20,
                     {font: `normal px${(canvas.width * (3 / 100) < 20 && canvas.width * (3 / 100) > 15)? canvas.width * (3 / 100):(canvas.width * (3/ 100) <= 15)? 15: 20} Luckiest Guy`, stroke: {inUse: true, width: 1}});
                     lines.forEach((line)=>{
