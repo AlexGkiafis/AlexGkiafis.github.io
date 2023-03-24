@@ -100,6 +100,8 @@
         margin-top: 25px
     }
 </Style>
+    <p>I made this game a very long time ago, please don't judge</p>
+    <canvas class="canvvaas" id="canvvaas2222"></canvas>
 
 <script>
 if(true){
@@ -1841,7 +1843,7 @@ Promise.all(promises).then((image)=>{
             // keeps track of enemies that have been spawned
             let enemiesSpawned = 0;
 
-            let speed = 4000;
+            let speed = 2500;
 
             if(wave == 0){
                 enemyTypes = [normalEnemy];
@@ -1870,14 +1872,14 @@ Promise.all(promises).then((image)=>{
                     enemyTypes.push(kidEnemy, kidEnemy, kidEnemy, kidEnemy, kidEnemy);
                     enemyTypes.push(normalEnemy, normalEnemy, normalEnemy, normalEnemy, normalEnemy);
                 }
-                maxEnemies = 15;
+                maxEnemies = 12;
                 enemyTypes.push(normalEnemy);
             }
             if(wave == 5){
                 for(let i = 0; i < 5; i++){
                     enemyTypes.push(kidEnemy, normalEnemy, kidEnemy, kidEnemy, normalEnemy);
                 }
-                maxEnemies = 20;
+                maxEnemies = 13;
                 enemyTypes.push(normalEnemy);
             }
             if(wave == 6){
@@ -1885,28 +1887,28 @@ Promise.all(promises).then((image)=>{
                     enemyTypes.push(kidEnemy, normalEnemy, kidEnemy, kidEnemy, normalEnemy);
                 }
                 enemyTypes.push(normalEnemy);
-                maxEnemies = 20;
+                maxEnemies = 14;
             }
             if(wave == 7){
                 for(let i = 0; i < 5; i++){
                     enemyTypes.push(tankEnemy);
                 }
                 enemyTypes.push(normalEnemy);
-                maxEnemies = 5;
+                maxEnemies = 4;
             }
             if(wave == 8){
                 for(let i = 0; i < 4; i++){
                     enemyTypes.push(normalEnemy, normalEnemy, kidEnemy, tankEnemy, normalEnemy);
                 }
                 enemyTypes.push(normalEnemy);
-                maxEnemies = 20;
+                maxEnemies = 10;
             }
             if(wave == 9){
                 for(let i = 0; i < 3; i++){
                     enemyTypes.push(normalEnemy, kidEnemy, kidEnemy, kidEnemy, tankEnemy);
                 }
                 enemyTypes.push(normalEnemy);
-                maxEnemies = 15;
+                maxEnemies = 6;
             }
             if(wave == 10){
                 for(let i = 0; i < 4; i++){
@@ -2456,7 +2458,7 @@ Promise.all(promises).then((image)=>{
        
         if(skipinstructions == false){
         dialogState = 'onprogress';
-        addDialog({text: "Hello and welcome to my game! My name is Karak10 and this is the first game I have ever created. If I coded this correctly, clicking your screen should make the next dialog appear.", 
+        addDialog({text: "Hello and welcome to my game! My name is Alex and this is the first game I have ever created. If I coded this correctly, clicking your screen should make the next dialog appear.", 
         color: 'white', font: `normal ${(canvas.width * (3 / 100) < 20 && canvas.width * (3 / 100) > 15)? canvas.width * (3 / 100):(canvas.width * (3/ 100) <= 15)? 15: 20}px Luckiest Guy`},
         {inUse: true, color: 'black', width: 1 },
         canvas.width * (10 / 100), canvas.height * (35 / 100), canvas.width * (80 / 100), 24, 50);
@@ -2589,7 +2591,7 @@ Promise.all(promises).then((image)=>{
                     else if(wave == 4){
                         dialogState = 'onprogress';
                         dialog = [];
-                        addDialog({text: "Done already? That's just like you, always gets the job done, quickly and clean, you should be given a raise or something, sadly, I have no money to give you, but we can become friend if you want this.", 
+                        addDialog({text: "Done already? That's just like you, always gets the job done, quickly and clean, sadly, I have no money to give you, but hey, at least you got the exps :)", 
                         color: 'white', font: `normal ${(canvas.width * (3 / 100) < 20 && canvas.width * (3 / 100) > 15)? canvas.width * (3 / 100):(canvas.width * (3/ 100) <= 15)? 15: 20}px Luckiest Guy`},
                         {inUse: true, color: 'black', width: 1 },
                         canvas.width * (10 / 100), canvas.height * (35 / 100), canvas.width * (80 / 100), 24, 50);
@@ -3246,7 +3248,7 @@ Promise.all(promises).then((image)=>{
             else if(dialogCount == 33){
                 dialogState = 'onprogress';
                 dialog = [];
-                addDialog({text: "Let's do this now, let's beat the last wave, this will be a little bit more challenging since it is the last, the enemies will spawn much faster, so be careful.", 
+                addDialog({text: "Let's do this now, let's beat the last wave, this will be a little bit more challenging since it is the last, the enemies will spawn a little faster, so be careful.", 
                 color: 'white', font: `normal ${(canvas.width * (3 / 100) < 20 && canvas.width * (3 / 100) > 15)? canvas.width * (3 / 100):(canvas.width * (3/ 100) <= 15)? 15: 20}px Luckiest Guy`},
                 {inUse: true, color: 'black', width: 1 },
                 canvas.width * (10 / 100), canvas.height * (35 / 100), canvas.width * (80 / 100), 24, 50);
@@ -3262,7 +3264,7 @@ Promise.all(promises).then((image)=>{
             else if(dialogCount == 36){
                 dialogState = 'onprogress';
                 dialog = [];
-                addDialog({text: "It was nice to meet you, dear friend, but it is now time to wake up, you cannot keep running away from reality any longer, it is your responsibility to see the world how it truly is, how you made it be, I am sorry..", 
+                addDialog({text: "It was nice to meet you, friend, but it is now time to wake up...", 
                 color: 'white', font: `normal ${(canvas.width * (3 / 100) < 20 && canvas.width * (3 / 100) > 15)? canvas.width * (3 / 100):(canvas.width * (3/ 100) <= 15)? 15: 20}px Luckiest Guy`},
                 {inUse: true, color: 'black', width: 1 },
                 canvas.width * (10 / 100), canvas.height * (35 / 100), canvas.width * (80 / 100), 24, 60);
